@@ -1,0 +1,83 @@
+
+.fp_default .smpause,  .fp_paused .smpause{
+			background-image: url('http://icons.iconarchive.com/icons/mazenl77/I-like-buttons/32/Style-Play-icon.png');
+
+		
+	}
+
+
+.fp_default .smpause:hover,.fp_paused .smpause:hover {
+			background-image: url('http://icons.iconarchive.com/icons/hopstarter/soft-scraps/32/Button-Play-icon.png');
+}
+
+
+.fp_playing .smpause{
+			background-image: url('http://icons.iconarchive.com/icons/mazenl77/I-like-buttons/32/Style-Pause-icon.png');
+		
+	}
+
+.fp_playing .smpause:hover{
+			background-image: url('http://icons.iconarchive.com/icons/hopstarter/soft-scraps/32/Button-Pause-icon.png');
+}
+.smstop {
+			background-image: url('http://icons.iconarchive.com/icons/mazenl77/I-like-buttons/32/Style-Stop-icon.png');
+}
+
+.freshplayer{
+	width: 300px;
+	height: 40px;
+	margin: 3px;
+	background-color: #333;
+	border-radius: 5px;
+}
+	.smstop, .smpause {
+			width: 32px;
+			height: 32px;
+ 			cursor: pointer;
+			border-radius: 3px;
+			display: inline-block;
+			color: #fff;
+	}
+	.fpstatus {
+		display: inline-block;
+		width: 228px;
+	}
+	.fpbuffer {
+		margin: 2px;
+		min-width: 3px;
+		height: 8px;
+		width: 200px;
+		display: inline-block;
+		background-color: #ddd;
+	}
+
+	.fpload {
+		height: 8px;
+		width: 0;
+		background-color: #006063;
+		
+	}
+
+	.fp_playing .fpload{
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-right-color: #000;
+		border-right-width: 3px;
+		border-right-style: groove;
+	}
+	
+	.fpbuttons {
+		display: inline;
+	}
+
+	.fptimer, .fpTotalDuration{
+		color: #fff;
+	}
+	.fptimerContainer {
+		margin-bottom: 3px;
+		width: 62px;
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: #BAA;
+		border-radius: 3px;
+	}
