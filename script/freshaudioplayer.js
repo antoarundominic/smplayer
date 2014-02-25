@@ -55,7 +55,7 @@ var freshAudioPlayer,
               },
 
               finish: function () {
-                  $(this._fpData.fp_uibox).removeClass(this._fpData.className);
+                $(this._fpData.fp_uibox).removeClass(this._fpData.className);
                 $(this._fpData.fp_uibox).addClass(self.css.sDefault);
                 this._fpData.className = self.css.sDefault;
               },
@@ -83,7 +83,14 @@ var freshAudioPlayer,
             };
 
             $('.smpause').on('click',function () {
-              soundManager.togglePause($(this).closest('#fpurl').attr("s_Id"));
+               var _sound = soundManager.getSoundById($(this).closest('#fpurl').attr("s_Id"));
+              if(_sound.paused){
+                _sound.togglePause();
+              }
+              else{
+                _sound.load();
+                _sound.play();
+              }
             });
 
             $('.smstop').on('click',function () {
